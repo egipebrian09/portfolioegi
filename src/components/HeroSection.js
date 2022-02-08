@@ -1,5 +1,5 @@
-import Button from "./button";
-import Navbar from "./navbar";
+import Button from "./Button";
+import Navbar from "./Navbar";
 
 function HeroSection(){
     return (
@@ -15,5 +15,6 @@ function HeroSection(){
                  <button variant="fill-yellow">Pelajari</button>
             </div>
         </div>
-    )
+    );
 }
+export default HeroSection;

@@ -1,5 +1,10 @@
 import NavItem from "./NavItem";
 
 function Nav() {
-    return
+    return (
+        <div className="">
+            <NavItem/>
+        </div>
+    )
 }
+export default Nav;

@@ -1,9 +1,17 @@
-function Button() {
+function Button({ children, variant }) {
+
+    const variants = {
+        "outline-yellow": 'text-yellow-300 border-yellow-300 rounded-full',
+        "fill-yellow": 'bg-yellow-300 rounded-full'
+    }
+
+    const pickedVariant = variants [variant];
+
     return (
         <div className="text-center">
-            <a className="font-semibold text-yellow-300 border border-yellow-300 rounded-full px-6 py-2">Contact</a>
+            <a className={'border px-10 py-2 font-semibold rexr-lg inline-block ${pickedVariant}'}>{children}</a>
           </div>
     );
 }
 
-export default Button; 
+export default button; 
